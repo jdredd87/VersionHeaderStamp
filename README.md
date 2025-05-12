@@ -1,4 +1,4 @@
-Adds ability to add a header to your source files.
+Adds ability to add a header to your source files with some simple revision info.
 
 Ctrl+Shift+V will stamp source file.
 
