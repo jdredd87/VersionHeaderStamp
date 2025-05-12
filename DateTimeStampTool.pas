@@ -42,8 +42,8 @@ var
  ReadBytes, Offset: Integer;
  LineIndex, BuildValue: Integer;
  LineText: string;
- FoundDate, FoundTime, FoundUser, FoundBuild, BlankLineInserted: Boolean;
- DateStamp, TimeStamp, UserStamp, BuildStamp: string;
+ FoundDate, FoundTime, FoundUser, FoundBuild: Boolean;
+ DateStamp, TimeStamp, UserStamp: string;
  Lines: TStringList;
  Buffer: array [0 .. 1023] of AnsiChar;
 begin
@@ -82,8 +82,6 @@ begin
    FoundTime := False;
    FoundUser := False;
    FoundBuild := False;
-   BlankLineInserted := False;
-   BuildValue := 1;
 
    DateStamp := REVISION_DATE + FormatDateTime('mm/dd/yyyy', Now);
    TimeStamp := REVISION_TIME + FormatDateTime('hh:nn AM/PM', Now);

@@ -1,7 +1,7 @@
 // Revision Date : 05/12/2025
 // Revision Time : 12:14 AM
 // Revised by : cpstevenc
-// Version Count : 13
+// Version Count : 14
 
 unit RegisterDateTimeStampTool;
 
@@ -94,7 +94,6 @@ var
  MainMenu: TMainMenu;
  ToolsMenu: TMenuItem;
  i: Integer;
- FToolButton: TControl;
 begin
  if MenuItemAdded then
   Exit;
@@ -217,7 +216,7 @@ begin
 
    // Define Package Info
    PackageName := 'Version Header Stamp';
-   VersionInfo := 'v1.0.0.1';
+   VersionInfo := 'v1.0.0.2';
 
    // Register on splash screen
    SplashScreenServices.AddPluginBitmap(PackageName + ' ' + VersionInfo, Bitmap.Handle, False, ''); // last param adds text under it
